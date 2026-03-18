@@ -730,10 +730,10 @@ html, body {
         }
         
         stopWebViewChecker() {
-            (this.state.webviewChecker) {
-                clearInterval(this.state.webviewChecker);
-                this.state.webviewChecker = null;
-            }
+    if (this.state.webviewChecker) {
+        clearInterval(this.state.webviewChecker);
+        this.state.webviewChecker = null;
+    }
         }
         
         // ==================================================
